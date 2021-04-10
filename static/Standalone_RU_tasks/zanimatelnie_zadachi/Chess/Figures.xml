@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<figures>
+
+<figure file="horse.bmp" name="Конь" enabled="true">
+  <move x="2"  y="1" />
+  <move x="1"  y="2" />
+  <move x="-2" y="1" />
+  <move x="-1" y="2" />
+  <move x="2"  y="-1"/>
+  <move x="1"  y="-2"/>
+  <move x="-2" y="-1"/>
+  <move x="-1" y="-2"/>
+</figure>
+
+<figure file="rook.bmp" name="Ладья" enabled="false">
+  <move x="1"  y="0" />
+  <move x="2"  y="0" />
+  <move x="3"  y="0" />
+  <move x="4"  y="0" />
+  <move x="5"  y="0" />
+  <move x="6"  y="0" />
+  <move x="7"  y="0" />
+  <move x="-1"  y="0" />
+  <move x="-2"  y="0" />
+  <move x="-3"  y="0" />
+  <move x="-4"  y="0" />
+  <move x="-5"  y="0" />
+  <move x="-6"  y="0" />
+  <move x="-7"  y="0" />
+  <move x="0"  y="1" />
+  <move x="0"  y="2" />
+  <move x="0"  y="3" />
+  <move x="0"  y="4" />
+  <move x="0"  y="5" />
+  <move x="0"  y="6" />
+  <move x="0"  y="7" />
+  <move x="0"  y="-1" />
+  <move x="0"  y="-2" />
+  <move x="0"  y="-3" />
+  <move x="0"  y="-4" />
+  <move x="0"  y="-5" />
+  <move x="0"  y="-6" />
+  <move x="0"  y="-7" />
+</figure>
+
+<figure file="queen.bmp" name="Ферзь" enabled="true">
+  <move x="1"  y="0" />
+  <move x="2"  y="0" />
+  <move x="3"  y="0" />
+  <move x="4"  y="0" />
+  <move x="5"  y="0" />
+  <move x="6"  y="0" />
+  <move x="7"  y="0" />
+  <move x="-1"  y="0" />
+  <move x="-2"  y="0" />
+  <move x="-3"  y="0" />
+  <move x="-4"  y="0" />
+  <move x="-5"  y="0" />
+  <move x="-6"  y="0" />
+  <move x="-7"  y="0" />
+  <move x="0"  y="1" />
+  <move x="0"  y="2" />
+  <move x="0"  y="3" />
+  <move x="0"  y="4" />
+  <move x="0"  y="5" />
+  <move x="0"  y="6" />
+  <move x="0"  y="7" />
+  <move x="0"  y="-1" />
+  <move x="0"  y="-2" />
+  <move x="0"  y="-3" />
+  <move x="0"  y="-4" />
+  <move x="0"  y="-5" />
+  <move x="0"  y="-6" />
+  <move x="0"  y="-7" />
+  <move x="1"  y="1" />
+  <move x="2"  y="2" />
+  <move x="3"  y="3" />
+  <move x="4"  y="4" />
+  <move x="5"  y="5" />
+  <move x="6"  y="6" />
+  <move x="7"  y="7" />
+  <move x="1"  y="-1" />
+  <move x="2"  y="-2" />
+  <move x="3"  y="-3" />
+  <move x="4"  y="-4" />
+  <move x="5"  y="-5" />
+  <move x="6"  y="-6" />
+  <move x="7"  y="-7" />
+  <move x="-1"  y="1" />
+  <move x="-2"  y="2" />
+  <move x="-3"  y="3" />
+  <move x="-4"  y="4" />
+  <move x="-5"  y="5" />
+  <move x="-6"  y="6" />
+  <move x="-7"  y="7" />
+  <move x="-1"  y="-1" />
+  <move x="-2"  y="-2" />
+  <move x="-3"  y="-3" />
+  <move x="-4"  y="-4" />
+  <move x="-5"  y="-5" />
+  <move x="-6"  y="-6" />
+  <move x="-7"  y="-7" />
+</figure>
+
+<figure file="slon.bmp" name="Слон" enabled="false">
+  <move x="1"  y="1" />
+  <move x="2"  y="2" />
+  <move x="3"  y="3" />
+  <move x="4"  y="4" />
+  <move x="5"  y="5" />
+  <move x="6"  y="6" />
+  <move x="7"  y="7" />
+  <move x="1"  y="-1" />
+  <move x="2"  y="-2" />
+  <move x="3"  y="-3" />
+  <move x="4"  y="-4" />
+  <move x="5"  y="-5" />
+  <move x="6"  y="-6" />
+  <move x="7"  y="-7" />
+  <move x="-1"  y="1" />
+  <move x="-2"  y="2" />
+  <move x="-3"  y="3" />
+  <move x="-4"  y="4" />
+  <move x="-5"  y="5" />
+  <move x="-6"  y="6" />
+  <move x="-7"  y="7" />
+  <move x="-1"  y="-1" />
+  <move x="-2"  y="-2" />
+  <move x="-3"  y="-3" />
+  <move x="-4"  y="-4" />
+  <move x="-5"  y="-5" />
+  <move x="-6"  y="-6" />
+  <move x="-7"  y="-7" />
+</figure>
+
+<figure file="king.bmp" name="Король" enabled="false">
+  <move x="1"  y="0" />
+  <move x="-1"  y="0" />
+  <move x="0"  y="1" />
+  <move x="0"  y="-1" />
+  <move x="1"  y="1" />
+  <move x="-1"  y="1" />
+  <move x="-1"  y="-1" />
+  <move x="1"  y="-1" />
+</figure>
+
+<figure file="horse+solder.bmp" name="Всадник" enabled="false">
+  <move x="2"  y="1" />
+  <move x="1"  y="2" />
+  <move x="-2" y="1" />
+  <move x="-1" y="2" />
+  <move x="2"  y="-1"/>
+  <move x="1"  y="-2"/>
+  <move x="-2" y="-1"/>
+  <move x="-1" y="-2"/>
+ <move x="1" y="-1"/>
+ <move x="-1" y="-1"/>
+</figure>
+
+</figures>

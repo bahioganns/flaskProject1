@@ -1,0 +1,68 @@
+***  Installation Started 03/23/2021 21:21  ***
+Title: Занимательные задачи
+Source: C:\Users\BAHIOG~1\AppData\Local\Temp\Rar$EXa7360.1813\KIO-2004-2016\math2004.exe | 11-23-2010 | 10:36:42 | 974214
+Made Dir: C:\Program Files (x86)\Tasks.IPO
+File Copy: C:\Program Files (x86)\Tasks.IPO\UNWISE.EXE | 06-25-1999 | 10:55:30 | | 149504 | 30fdd633
+RegDB Key: Software\Microsoft\Windows\CurrentVersion\Uninstall\Занимательные задачи
+RegDB Val: Занимательные задачи
+RegDB Name: DisplayName
+RegDB Root: 2
+RegDB Key: Software\Microsoft\Windows\CurrentVersion\Uninstall\Занимательные задачи
+RegDB Val: C:\PROGRA~2\Tasks.IPO\UNWISE.EXE C:\PROGRA~2\Tasks.IPO\INSTALL.LOG
+RegDB Name: UninstallString
+RegDB Root: 2
+File Copy: C:\Program Files (x86)\Tasks.IPO\Start.xml | 03-03-2004 | 19:52:56 | | 281 | d5255ebb
+File Copy: C:\Program Files (x86)\Tasks.IPO\Тяни-толкай2.ico | 03-03-2004 | 18:05:14 | | 766 | ddf343df
+Made Dir: C:\Program Files (x86)\Tasks.IPO\Figures
+File Copy: C:\Program Files (x86)\Tasks.IPO\Figures\1124.xml | 02-28-2004 | 15:32:36 | | 2000 | eaf8723b
+File Copy: C:\Program Files (x86)\Tasks.IPO\Figures\Узор3.xml | 02-28-2004 | 23:36:06 | | 5380 | 19cdf2e9
+File Copy: C:\Program Files (x86)\Tasks.IPO\Figures\Узор2.xml | 02-28-2004 | 23:32:56 | | 5118 | e7e76c63
+File Copy: C:\Program Files (x86)\Tasks.IPO\Figures\Узор.xml | 02-28-2004 | 23:31:38 | | 4839 | 35b17056
+Made Dir: C:\Program Files (x86)\Tasks.IPO\Chess
+File Copy: C:\Program Files (x86)\Tasks.IPO\Chess\8 ферзей.map | 10-31-2003 | 19:16:14 | | 208 | c7bce378
+File Copy: C:\Program Files (x86)\Tasks.IPO\Chess\Slon.bmp | 11-11-2003 | 19:08:40 | | 12342 | 13fd3816
+File Copy: C:\Program Files (x86)\Tasks.IPO\Chess\12 Конь 2 Ферзь.map | 02-23-2004 | 23:08:50 | | 208 | 55e0b4f9
+File Copy: C:\Program Files (x86)\Tasks.IPO\Chess\rook.bmp | 11-11-2003 | 19:08:40 | | 12342 | a025bcad
+File Copy: C:\Program Files (x86)\Tasks.IPO\Chess\horse.bmp | 11-11-2003 | 19:08:40 | | 12342 | d82bf6c
+File Copy: C:\Program Files (x86)\Tasks.IPO\Chess\queen.bmp | 11-11-2003 | 19:08:40 | | 12342 | e76692e3
+File Copy: C:\Program Files (x86)\Tasks.IPO\Chess\32 коня.map | 10-31-2003 | 19:16:14 | | 208 | 8dd80114
+File Copy: C:\Program Files (x86)\Tasks.IPO\Chess\king.bmp | 11-11-2003 | 19:08:40 | | 12342 | c54869d4
+File Copy: C:\Program Files (x86)\Tasks.IPO\Chess\Figures.xdb | 02-28-2004 | 02:08:46 | | 1085 | 61c80f27
+File Copy: C:\Program Files (x86)\Tasks.IPO\Chess\Figures.xml | 02-28-2004 | 02:06:10 | | 4027 | 8b3cd552
+File Copy: C:\Program Files (x86)\Tasks.IPO\Chess\horse+solder.bmp | 11-23-2003 | 23:43:46 | | 12342 | 7b48aa2b
+File Copy: C:\Program Files (x86)\Tasks.IPO\Figures\task.xml | 02-23-2004 | 15:07:42 | | 668 | 1d8d4875
+File Copy: C:\Program Files (x86)\Tasks.IPO\Figures\квадрат.xml | 02-20-2004 | 17:07:36 | | 740 | 46a98344
+File Copy: C:\Program Files (x86)\Tasks.IPO\Figures\квадрат - решение.xml | 02-23-2004 | 15:55:28 | | 583 | 13d55e14
+File Copy: C:\Program Files (x86)\Tasks.IPO\Figures\Прямоугольный треугольник.xml | 11-11-2003 | 19:08:42 | | 390 | a73915f8
+File Copy: C:\Program Files (x86)\Tasks.IPO\Figures\пятиугольник.xml | 02-23-2004 | 14:39:22 | | 886 | 70609e67
+File Copy: C:\Program Files (x86)\Tasks.IPO\Desert.xml | 03-01-2004 | 14:33:54 | | 64 | 4b0ff338
+File Copy: C:\Program Files (x86)\Tasks.IPO\math.exe | 03-04-2004 | 09:51:54 | | 1480704 | fcc93a5f
+File Overwrite: C:\Program Files (x86)\Tasks.IPO\Unwise.exe | 06-25-1999 | 10:56:04 | | 127184 | 1db8950
+File Copy: C:\Program Files (x86)\Tasks.IPO\Unwise.ini | 10-30-2003 | 13:57:50 | | 4979 | 1dca1389
+Made Dir: C:\Users\bahioganns\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Занимательные задачи
+Shell Link: C:\Users\bahioganns\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Занимательные задачи\Удаление задач.lnk
+Link Info: C:\Program Files (x86)\Tasks.IPO\Unwise.exe |  |  | 0 | 1 | 0 | 
+Made Dir: C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Занимательные задачи
+Shell Link: C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Занимательные задачи\Занимательные задачи.lnk
+Link Info: C:\Program Files (x86)\Tasks.IPO\math.exe | C:\PROGRA~2\Tasks.IPO\ | C:\PROGRA~2\Tasks.IPO\math.exe | 0 | 1 | 0 | 
+Shell Link: C:\Users\Public\Desktop\Занимательные задачи.lnk
+Link Info: C:\Program Files (x86)\Tasks.IPO\math.exe |  | C:\PROGRA~2\Tasks.IPO\Тяни-толкай2.ico | 0 | 1 | 0 | 
+Shell Link: C:\Users\bahioganns\AppData\Roaming\Microsoft\Windows\Start Menu\Занимательные задачи.lnk
+Link Info: C:\Program Files (x86)\Tasks.IPO\math.exe | C:\PROGRA~2\Tasks.IPO | C:\PROGRA~2\Tasks.IPO\Тяни-толкай2.ico | 0 | 1 | 0 | 
+INI File: C:\Program Files (x86)\Tasks.IPO\UNWISE.INI
+INI Sect: Settings
+INI Item: Start Red
+INI Val: 255
+INI File: C:\Program Files (x86)\Tasks.IPO\UNWISE.INI
+INI Sect: Settings
+INI Item: Start Green
+INI Val: 255
+INI File: C:\Program Files (x86)\Tasks.IPO\UNWISE.INI
+INI Sect: Settings
+INI Item: Start Blue
+INI Val: 0
+Delete in-use files: On
+File Tree: C:\PROGRA~2\Tasks.IPO\*.*
+File Tree: C:\PROGRA~2\Tasks.IPO\Chess\*.*
+File Tree: C:\PROGRA~2\Tasks.IPO\Figures\*.*
+User Rights: Admin

@@ -1,0 +1,22 @@
+<figure>
+<point x="180" y="220" id="1" fig="-1"/>
+<point x="60" y="220" id="2" fig="-1"/>
+<point x="60" y="60" id="3" fig="-1"/>
+
+<point x="90" y="192" fig="0" id="5"/>
+
+
+
+
+
+
+<line p1="2" p2="5" selected="-1" len="41.0365690573664"/>
+
+
+
+
+
+
+<line p1="3" p2="5" selected="-1" len="135.366170072142"/>
+<line p1="5" p2="1" selected="-1" len="94.2549733435854"/>
+</figure>

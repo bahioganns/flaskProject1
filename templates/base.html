@@ -1,0 +1,17 @@
+<html>
+  <head>
+    {% if title %}
+    <title>{{title}} - KIO school</title>
+    {% else %}
+    <title>KIO school</title>
+    {% endif %}
+  </head>
+  <body>
+    <div>Main page <a href="index">Home</a></div>
+    <div>Current kio competition: <a href="current_competition">2011-2016</a></div>
+    <div>English: <a href="english_page">Open English page</a> </div>
+    <div>Standalone tasks: <a href="standalone_ru_tasks">Open standalone tasks page</a></div>
+    <hr>
+    {% block content %}{% endblock %}
+  </body>
+</html>

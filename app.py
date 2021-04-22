@@ -28,6 +28,14 @@ def start_task_en(name):
     subprocess.call(args, stdout=FNULL, stderr=FNULL, shell=False)
 
 
+@app.route('/start_kio_school_task/<name>')
+def start_kio_school_task(name):
+    FNULL = open(os.devnull, 'w')
+    args = "static\\flash.exe static\\KIO_SCHOOL\\" + name
+    subprocess.call(args, stdout=FNULL, stderr=FNULL, shell=False)
+
+
+
 @app.route("/go_back")
 def go_back():
     return "<script>history.go(-1)</script>"
@@ -51,6 +59,12 @@ def open_en_page():
 @app.route("/old_files")
 def old_files():
     return render_template("old_files.html")
+
+
+@app.route("/kio_school_files")
+def kio_school_files():
+    return render_template("kio_school_files.html")
+
 
 
 @app.route("/standalone_ru_tasks")

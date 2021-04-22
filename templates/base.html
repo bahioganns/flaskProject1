@@ -1,16 +1,19 @@
 <html>
+
   <head>
+  <div> <div> <a href="index"> <img src="/static/KIO_SCHOOL/design_sources/logo.png" /> </a> </div> </div>
     {% if title %}
     <title>{{title}} - KIO school</title>
     {% else %}
     <title>KIO school</title>
     {% endif %}
   </head>
-  <body>
+  <body style="background-color:LemonChiffon;">
     <div>Main page <a href="index">Home</a></div>
     <div>Current kio competition: <a href="current_competition">2011-2016</a></div>
     <div>English: <a href="english_page">Open English page</a> </div>
     <div>Standalone tasks: <a href="standalone_ru_tasks">Open standalone tasks page</a></div>
+    <div>KIO School page: <a href="kio_school_files">Open KIO school</a> </div>
     <hr>
     {% block content %}{% endblock %}
   </body>

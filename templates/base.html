@@ -16,17 +16,26 @@
     color: #000000;
     }
 
-    #menu_button{
-        background-color: #eb8c5f; /* Green */
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
+    .menu_button{
+
+        background-color: #eb8c5f;
+        width: 100%;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
     }
 
+    .menu_button:hover{
+        background-color: #ea5211;
+    }
+
+    .eltech{
+        font-weight: 600;
+    }
 
    #content_wrapper, #page_wrapper{
     background-color: #FFFFFF;
@@ -40,9 +49,9 @@
     }
 
    #main_menu{
-    width: 1000px;
+    width: 1088px;
 	margin: 0 auto;
-	padding:40px;
+	padding:0px;
    }
 
    </style>
@@ -55,7 +64,7 @@
   </head>
   <body style="background-color:#f9f6e3;">
   <div id="header">
-      <table width="100%">
+      <table width="1000" align="center">
         <tbody><tr>
           <td align="left" width="169">
             <a href="index"><img alt="Logo" src="/static/KIO_SCHOOL/design_sources/logo.png"></a>
@@ -75,15 +84,13 @@
 
 
     <table id="main_menu"
-           align="center"
-
-            >
+           align="center">
 
           <tbody><tr>
-              <td><input type="button" id="menu_button" value="Current KIO competition" onclick="location.href='current_competition'"/></td>
-              <td><input type="button" id="menu_button" value="English tasks" onclick="location.href='english_page'"/></td>
-              <td><input type="button" id="menu_button" value="Standalone tasks" onclick="location.href='standalone_ru_tasks'"/></td>
-              <td><input type="button" id="menu_button" value="KIO School page" onclick="location.href='kio_school_files'"/></td>
+              <td><input type="button" class="menu_button" value="Current KIO competition" onclick="location.href='current_competition'"/></td>
+              <td><input type="button" class="menu_button" value="English tasks" onclick="location.href='english_page'"/></td>
+              <td><input type="button" class="menu_button" value="Standalone tasks" onclick="location.href='standalone_ru_tasks'"/></td>
+              <td><input type="button" class="menu_button" value="KIO School page" onclick="location.href='kio_school_files'"/></td>
           </tr>
           </tbody>
     </table>

@@ -1,13 +1,21 @@
 {% extends "base.html" %}
 {% block content %}
-<h1>Full list of English tasks</h1>
+{#<h1>Full list of English tasks</h1>#}
 <body>
-    <div>Tasks List: </div>
-    <div>Current competition EN: <a href="english_tasks">2011-2012</a></div>
 
-    <p>
-    <input type="button" onclick="history.back();" value="Back"/>
-    </p>
+    <div id="content_wrapper">
+        <br>
+            <div id="content">
+                <div>Tasks List: </div>
+                <div>Current competition EN: <a href="english_tasks">2011-2012</a></div>
+
+                <p>
+                <input type="button" onclick="history.back();" value="Back"/>
+                </p>
+            </div>
+        <br>
+    </div>
+
 
 </body>
 {% endblock %}

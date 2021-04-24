@@ -1,41 +1,48 @@
 {% extends "base.html" %}
 {% block content %}
-<h1>Tasks from current KIO competition</h1>
+{#<h1>Tasks from current KIO competition</h1>#}
 <body>
-    <div>Tasks List: </div>
+<div id="content_wrapper">
+        <br>
+            <div id="content">
+                <div>Tasks List: </div>
 
-    <p>
-    <input type="button" value="KIO 2011 1" onclick="fetch('/start_task_ru/11_1.swf')"/>
-    <input type="button" value="KIO 2011 2" onclick="fetch('/start_task_ru/11_2.swf')"/>
-    </p>
-    <p>
-    <input type="button" value="KIO 2012 0" onclick="fetch('/start_task_ru/12_0.swf')"/>
-    <input type="button" value="KIO 2012 1" onclick="fetch('/start_task_ru/12_1.swf')"/>
-    <input type="button" value="KIO 2012 2" onclick="fetch('/start_task_ru/12_2.swf')"/>
-    </p>
-    <p>
-    <input type="button" value="KIO 2013 0" onclick="fetch('/start_task_ru/13_0.swf')"/>
-    <input type="button" value="KIO 2013 1" onclick="fetch('/start_task_ru/13_1.swf')"/>
-    <input type="button" value="KIO 2013 2" onclick="fetch('/start_task_ru/13_2.swf')"/>
-    </p>
-    <p>
-    <input type="button" value="KIO 2014 0" onclick="fetch('/start_task_ru/14_0.swf')"/>
-    <input type="button" value="KIO 2014 1" onclick="fetch('/start_task_ru/14_1.swf')"/>
-    <input type="button" value="KIO 2014 2" onclick="fetch('/start_task_ru/14_2.swf')"/>
-    </p>
-    <p>
-    <input type="button" value="KIO 2015 0" onclick="fetch('/start_task_ru/15_0.swf')"/>
-    <input type="button" value="KIO 2015 1" onclick="fetch('/start_task_ru/15_1.swf')"/>
-    <input type="button" value="KIO 2015 2" onclick="fetch('/start_task_ru/15_2.swf')"/>
-    </p>
-    <p>
-    <input type="button" value="KIO 2016 0" onclick="fetch('/start_task_ru/16_0.swf')"/>
-    <input type="button" value="KIO 2016 1" onclick="fetch('/start_task_ru/16_1.swf')"/>
-    <input type="button" value="KIO 2016 2" onclick="fetch('/start_task_ru/16_2.swf')"/>
-    </p>
-    <p>
-    <input type="button" onclick="history.back();" value="Back"/>
-    </p>
+                <p>
+                <input type="button" value="KIO 2011 1" onclick="fetch('/start_task_ru/11_1.swf')"/>
+                <input type="button" value="KIO 2011 2" onclick="fetch('/start_task_ru/11_2.swf')"/>
+                </p>
+                <p>
+                <input type="button" value="KIO 2012 0" onclick="fetch('/start_task_ru/12_0.swf')"/>
+                <input type="button" value="KIO 2012 1" onclick="fetch('/start_task_ru/12_1.swf')"/>
+                <input type="button" value="KIO 2012 2" onclick="fetch('/start_task_ru/12_2.swf')"/>
+                </p>
+                <p>
+                <input type="button" value="KIO 2013 0" onclick="fetch('/start_task_ru/13_0.swf')"/>
+                <input type="button" value="KIO 2013 1" onclick="fetch('/start_task_ru/13_1.swf')"/>
+                <input type="button" value="KIO 2013 2" onclick="fetch('/start_task_ru/13_2.swf')"/>
+                </p>
+                <p>
+                <input type="button" value="KIO 2014 0" onclick="fetch('/start_task_ru/14_0.swf')"/>
+                <input type="button" value="KIO 2014 1" onclick="fetch('/start_task_ru/14_1.swf')"/>
+                <input type="button" value="KIO 2014 2" onclick="fetch('/start_task_ru/14_2.swf')"/>
+                </p>
+                <p>
+                <input type="button" value="KIO 2015 0" onclick="fetch('/start_task_ru/15_0.swf')"/>
+                <input type="button" value="KIO 2015 1" onclick="fetch('/start_task_ru/15_1.swf')"/>
+                <input type="button" value="KIO 2015 2" onclick="fetch('/start_task_ru/15_2.swf')"/>
+                </p>
+                <p>
+                <input type="button" value="KIO 2016 0" onclick="fetch('/start_task_ru/16_0.swf')"/>
+                <input type="button" value="KIO 2016 1" onclick="fetch('/start_task_ru/16_1.swf')"/>
+                <input type="button" value="KIO 2016 2" onclick="fetch('/start_task_ru/16_2.swf')"/>
+                </p>
+                <p>
+                <input type="button" onclick="history.back();" value="Back"/>
+                </p>
+
+            </div>
+        <br>
+    </div>
 
 </body>
 {% endblock %}

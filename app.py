@@ -35,7 +35,6 @@ def start_kio_school_task(name):
     subprocess.call(args, stdout=FNULL, stderr=FNULL, shell=False)
 
 
-
 @app.route("/go_back")
 def go_back():
     return "<script>history.go(-1)</script>"
@@ -64,7 +63,6 @@ def old_files():
 @app.route("/kio_school_files")
 def kio_school_files():
     return render_template("kio_school_files.html")
-
 
 
 @app.route("/standalone_ru_tasks")

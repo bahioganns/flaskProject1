@@ -5,6 +5,11 @@ import subprocess
 app = Flask(__name__)
 
 
+# TODO: add icons for all task buttons
+# TODO: add login system
+# TODO: add statistic
+# TODO: add 2005 y. tas
+
 @app.route('/')
 @app.route('/index')
 def index():

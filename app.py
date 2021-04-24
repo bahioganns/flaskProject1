@@ -29,7 +29,8 @@ def start_task_ru(name):
 @app.route('/start_task_en/<name>')
 def start_task_en(name):
     FNULL = open(os.devnull, 'w')
-    args = "static\\flash.exe static\\EN_tasks\\KIO_competition_en\\KIO_en_20" + name
+    args = "static\\flash.exe static\\EN_tasks\\" \
+           "KIO_competition_en\\KIO_en_20" + name
     subprocess.call(args, stdout=FNULL, stderr=FNULL, shell=False)
 
 
@@ -81,7 +82,8 @@ def start_2006_8_task(name, year):
     if year == "zadachi":
         args = "static\\Standalone_RU_tasks\\zanimatelnie_zadachi\\math.exe"
     else:
-        args = "static\\Standalone_RU_tasks\\KIO20" + year + name + "\\KIO20" + year + name + ".exe"
+        args = "static\\Standalone_RU_tasks\\KIO20" + year \
+               + name + "\\KIO20" + year + name + ".exe"
     subprocess.call(args, stdout=FNULL, stderr=FNULL, shell=False)
 
 

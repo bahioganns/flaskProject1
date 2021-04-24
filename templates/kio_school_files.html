@@ -1,20 +1,30 @@
 {% extends "base.html" %}
 {% block content %}
-<h1>Tasks from KIO competition on English</h1>
+
+<h1>KIO School</h1>
+
 <body>
-    <div>Tasks List: </div>
-    <p>
-    <input type="button" value="KIO test task" onclick="fetch('/start_kio_school_task/task1.swf')"/>
-    </p>
-    <p>
-    <input type="button" value="KIO test task" onclick="fetch('/start_kio_school_task/task2.swf')"/>
-    </p>
-     <p>
-    <input type="button" value="KIO test task" onclick="fetch('/start_kio_school_task/task3.swf')"/>
-    </p>
-    <p>
-    <input type="button" onclick="history.back();" value="Back"/>
-    </p>
+    <div id="content_wrapper">
+        <br>
+            <div id="content">
+                <div>Tasks List: </div>
+                <p>
+                <input type="button" value="KIO test task" onclick="fetch('/start_kio_school_task/task1.swf')"/>
+                </p>
+                <p>
+                <input type="button" value="KIO test task" onclick="fetch('/start_kio_school_task/task2.swf')"/>
+                </p>
+                 <p>
+                <input type="button" value="KIO test task" onclick="fetch('/start_kio_school_task/task3.swf')"/>
+                </p>
+                <p>
+                <input type="button" onclick="history.back();" value="Back"/>
+                </p>
+
+          </div>
+        <br>
+    </div>
+
 
 </body>
 {% endblock %}

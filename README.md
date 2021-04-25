@@ -16,4 +16,7 @@ python -m pip install -r requirements.txt
 
 # TODO: 
 -[ ] Add icons for every KIO competition task
--[ ] Run KIO school tasks from /static/KIO_SCHOOL/. That files can not be run by flash debugger, and that's a huge problem
+-[ ] Run KIO school tasks from /static/KIO_SCHOOL/. That files can not be run by flash debugger, and that's a huge problem  
+-[ ] Add personal statistic  
+-[ ] Add some initialisation  
+-[ ] Add admin  

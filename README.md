@@ -1,3 +1,7 @@
+# KIO School Remake
+
+[![CI](https://github.com/bahioganns/flaskProject1/actions/workflows/main.yml/badge.svg)](https://github.com/bahioganns/flaskProject1/actions/workflows/main.yml)
+
 # Overview
 This program is basically my thesis. It's little and pretty simple program for flash content, which uses flash debugger from adobe.com to open swf files.  
 This program uses Flask for interface with which I tried to simulate School KIO site.  

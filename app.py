@@ -13,39 +13,39 @@ app = Flask(__name__)
 # TODO: add statistic
 # TODO: add 2005 y. tas
 
-@app.route('/')
-@app.route('/index')
+@app.route("/")
+@app.route("/index")
 def index():
     """Render main page information."""
-    user = {'nickname': 'Dear User'}  # выдуманный пользователь
+    user = {"nickname": "Dear User"}  # выдуманный пользователь
     return render_template(
-        'index.html',
-        title='Home',
+        "index.html",
+        title="Home",
         user=user,
     )
 
 
-@app.route('/start_task_ru/<name>')
+@app.route("/start_task_ru/<name>")
 def start_task_ru(name):
     """Start task from KIO_competition."""
-    fnull = open(os.devnull, 'w')
+    fnull = open(os.devnull, "w")
     args = "static\\flash.exe static\\KIO_competition\\KIO_ru_20" + name
     subprocess.call(args, stdout=fnull, stderr=fnull, shell=False)
 
 
-@app.route('/start_task_en/<name>')
+@app.route("/start_task_en/<name>")
 def start_task_en(name):
     """Start task from KIO_competition_en."""
-    fnull = open(os.devnull, 'w')
+    fnull = open(os.devnull, "w")
     args = "static\\flash.exe static\\EN_tasks\\" \
            "KIO_competition_en\\KIO_en_20" + name
     subprocess.call(args, stdout=fnull, stderr=fnull, shell=False)
 
 
-@app.route('/start_kio_school_task/<name>')
+@app.route("/start_kio_school_task/<name>")
 def start_kio_school_task(name):
     """Start task from KIO_SCHOOL"""
-    fnull = open(os.devnull, 'w')
+    fnull = open(os.devnull, "w")
     args = "static\\flash.exe static\\KIO_SCHOOL\\" + name
     subprocess.call(args, stdout=fnull, stderr=fnull, shell=False)
 
@@ -62,13 +62,13 @@ def open_page():
     return render_template("current_competition.html")
 
 
-@app.route('/english_tasks')
+@app.route("/english_tasks")
 def open_en_tasks():
     """Open english tasks page."""
     return render_template("english_tasks.html")
 
 
-@app.route('/english_page')
+@app.route("/english_page")
 def open_en_page():
     """Open page for all english tasks."""
     return render_template("english_page.html")
@@ -92,10 +92,10 @@ def standalone_ru_tasks():
     return render_template("standalone_RU_tasks.html")
 
 
-@app.route('/start_2006_8_task/<year>/<name>')
+@app.route("/start_2006_8_task/<year>/<name>")
 def start_2006_8_task(name, year):
     """Start task Zanimatelnie zadachi"""
-    fnull = open(os.devnull, 'w')
+    fnull = open(os.devnull, "w")
     if year == "zadachi":
         args = "static\\Standalone_RU_tasks\\zanimatelnie_zadachi\\math.exe"
     else:
@@ -104,5 +104,5 @@ def start_2006_8_task(name, year):
     subprocess.call(args, stdout=fnull, stderr=fnull, shell=False)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     app.run(debug=True)

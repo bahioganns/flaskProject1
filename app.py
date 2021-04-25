@@ -4,7 +4,6 @@ from flask import Flask, render_template
 import os
 import subprocess
 
-
 app = Flask(__name__)
 
 
@@ -23,6 +22,12 @@ def index():
         title="Home",
         user=user,
     )
+
+
+@app.route("/login_page")
+def login_page():
+    """Get user information."""
+    return render_template("login_page.html")
 
 
 @app.route("/start_task_ru/<name>")

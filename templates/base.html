@@ -19,13 +19,13 @@
     .menu_button{
 
         background-color: #eb8c5f;
-        width: 100%;
+        width: 250px;
         border: none;
         color: white;
         padding: 15px 32px;
         text-align: center;
         text-decoration: none;
-        display: inline-block;
+        /*display: inline-block;*/
         font-size: 16px;
     }
 
@@ -59,6 +59,16 @@
         margin: 0 auto;
         padding:40px;
     }
+   
+   .navigation_bar{
+       background-color: #eb8c5f;
+        -webkit-box-shadow:0 2px 2px rgba(0, 0, 0, 0.3), 0 0 4px rgba(0, 0, 0, 0.1);
+        -moz-box-shadow:0 2px 2px rgba(0, 0, 0, 0.3), 0 0 4px rgba(0, 0, 0, 0.1);
+        box-shadow:0 2px 2px rgba(0, 0, 0, 0.3), 0 0 4px rgba(0, 0, 0, 0.1);
+        width: 1000px;
+        margin: 0 auto;
+        padding:15px;
+   }
 
    #main_menu{
         width: 1088px;
@@ -86,9 +96,6 @@
                     <div class="eltech">Факультет компьютерных технологий и информатики <br> СПбГЭТУ "ЛЭТИ"</div>
                     <div class="kio">совместно с Центром информатизации образования "КИО"</div>
               </td>
-              <td align="right">
-                    <input type="button" value="Users system" onclick="location.href='login_page'"/>
-              </td>
          </tbody>
       </table>
 
@@ -96,18 +103,26 @@
       <div class="clear"></div>
   </div>
 
+    <div class="navigation_bar">
+        <a type="button" class="menu_button" href="current_competition">Current KIO competition</a>
+        <a type="button" class="menu_button" href="english_page">English tasks</a>
+        <a type="button" class="menu_button" href="standalone_RU_tasks">Standalone tasks</a>
+        <a type="button" class="menu_button" href="kio_school_files">KIO School page</a>
+        <a type="button" class="menu_button" href="login_page">Personal information</a>
+    </div>
 
-    <table id="main_menu"
-           align="center">
+<!--    <table id="main_menu"-->
+<!--           align="center">-->
 
-          <tbody><tr>
-              <td><input type="button" class="menu_button" value="Current KIO competition" onclick="location.href='current_competition'"/></td>
-              <td><input type="button" class="menu_button" value="English tasks" onclick="location.href='english_page'"/></td>
-              <td><input type="button" class="menu_button" value="Standalone tasks" onclick="location.href='standalone_ru_tasks'"/></td>
-              <td><input type="button" class="menu_button" value="KIO School page" onclick="location.href='kio_school_files'"/></td>
-          </tr>
-          </tbody>
-    </table>
+<!--          <tbody><tr>-->
+
+<!--              <td><a type="button" class="menu_button" href="current_competition">Current KIO competition</a></td>-->
+<!--              <td><a type="button" class="menu_button" href="english_page">English tasks</a></td>-->
+<!--              <td><a type="button" class="menu_button" href="standalone_RU_tasks">Standalone tasks</a></td>-->
+<!--              <td><a type="button" class="menu_button" href="kio_school_files">KIO School page</a></td>-->
+<!--          </tr>-->
+<!--          </tbody>-->
+<!--    </table>-->
 
     {% block content %}{% endblock %}
   </body>

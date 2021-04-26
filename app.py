@@ -1,6 +1,6 @@
 """Entrypoint for flask application with kio tasks."""
 
-import subprocess
+import subprocess  # noqa: S404
 
 from flask import Flask, render_template
 
@@ -11,8 +11,8 @@ app = Flask(__name__)
 # TODO: add login system
 # TODO: add statistic
 # TODO: add 2005 y. tas
-# TODO: universal functions for page opening
-# TODO: open tasks on the top
+# TODO: open tasks on the top. Solved, but i don't know, how and why
+# TODO: menu_buttons without table
 
 @app.route("/")
 @app.route("/index")
@@ -28,46 +28,47 @@ def index():
 
 @app.route("/<category>")
 def open_any_task(category):
-    """Open."""
+    """Open any html page from template directory."""
+    if category == "favicon.ico":
+        return ""
     return render_template(f"{category}.html")
 
 
-@app.route("/start_task_ru/<name>")
-def start_task_ru(name):
-    """Start task from KIO_competition."""
-    args = "static\\flash.exe static\\KIO_competition\\KIO_ru_20" + name
-    subprocess.call(args)
+@app.route("/<category>/<name>/", defaults={"year": None})
+@app.route("/<category>/<year>/<name>")
+def start_task(category, name, year):
+    """Start any task."""
+    subprocess.call(  # noqa: S603
+        get_path(category, name, year),
+        stdout=subprocess.DEVNULL,
+    )
     return ""
 
 
-@app.route("/start_task_en/<name>")
-def start_task_en(name):
-    """Start task from KIO_competition_en."""
-    args = "static\\flash.exe static\\EN_tasks\\" \
-           "KIO_competition_en\\KIO_en_20" + name
-    subprocess.call(args)
-    return ""
+def get_path(category, name, year):
+    """Return path to the task."""
+    task_path = None
 
+    if category == "start_2006_8_task":
+        if year == "zadachi":
+            task_path = "Standalone_RU_tasks/zanimatelnie_zadachi/math.exe"
+        else:
+            kio_name = f"KIO20{year}{name}"
+            task_path = f"Standalone_RU_tasks/{kio_name}/{kio_name}.exe"
 
-@app.route("/start_kio_school_task/<name>")
-def start_kio_school_task(name):
-    """Start task from KIO_SCHOOL"""
-    args = "static\\flash.exe static\\KIO_SCHOOL\\" + name
-    subprocess.call(args)
-    return ""
+    elif category == "start_kio_school_task":
+        task_path = f"flash.exe static/KIO_SCHOOL/{name}"
 
+    elif category == "start_task_en":
+        task_path = (
+            f"flash.exe static/EN_tasks/KIO_competition_en/KIO_en_20{name}"
+        )
 
-@app.route("/start_2006_8_task/<year>/<name>")
-def start_2006_8_task(name, year):
-    """Start task Zanimatelnie zadachi."""
-    if year == "zadachi":
-        args = "static\\Standalone_RU_tasks\\zanimatelnie_zadachi\\math.exe"
-    else:
-        args = "static\\Standalone_RU_tasks\\KIO20" + year \
-               + name + "\\KIO20" + year + name + ".exe"
-    subprocess.call(args)
-    return ""
+    elif category == "start_task_ru":
+        task_path = f"flash.exe static/KIO_competition/KIO_ru_20{name}"
+
+    return f"static/{task_path}"
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=True)  # noqa: S201

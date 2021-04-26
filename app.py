@@ -1,6 +1,5 @@
 """Entrypoint for flask application with kio tasks."""
 
-import os
 import subprocess
 
 from flask import Flask, render_template

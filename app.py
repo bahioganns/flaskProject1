@@ -11,8 +11,7 @@ app = Flask(__name__)
 # TODO: add login system
 # TODO: add statistic
 # TODO: add 2005 y. tas
-# TODO: open tasks on the top. Solved, but i don't know, how and why
-# TODO: menu_buttons without table
+
 
 @app.route("/")
 @app.route("/index")

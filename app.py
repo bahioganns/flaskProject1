@@ -26,10 +26,10 @@ def index():
     )
 
 
-@app.route("/login_page")
-def login_page():
-    """Get user information."""
-    return render_template("login_page.html")
+@app.route("/<category>")
+def open_any_task(category):
+    """Open."""
+    return render_template(f"{category}.html")
 
 
 @app.route("/start_task_ru/<name>")
@@ -58,42 +58,6 @@ def start_kio_school_task(name):
     args = "static\\flash.exe static\\KIO_SCHOOL\\" + name
     subprocess.call(args, stdout=fnull, stderr=fnull, shell=False)
     return ""
-
-
-@app.route("/current_competition")
-def open_page():
-    """Open current competition page."""
-    return render_template("current_competition.html")
-
-
-@app.route("/english_tasks")
-def open_en_tasks():
-    """Open english tasks page."""
-    return render_template("english_tasks.html")
-
-
-@app.route("/english_page")
-def open_en_page():
-    """Open page for all english tasks."""
-    return render_template("english_page.html")
-
-
-@app.route("/old_files")
-def old_files():
-    """Open old files. This function has no use in current moment."""
-    return render_template("old_files.html")
-
-
-@app.route("/kio_school_files")
-def kio_school_files():
-    """Open KIO School page."""
-    return render_template("kio_school_files.html")
-
-
-@app.route("/standalone_ru_tasks")
-def standalone_ru_tasks():
-    """Open standalone ru tasks page."""
-    return render_template("standalone_RU_tasks.html")
 
 
 @app.route("/start_2006_8_task/<year>/<name>")

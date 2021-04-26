@@ -1,8 +1,9 @@
 """Entrypoint for flask application with kio tasks."""
 
-from flask import Flask, render_template
 import os
 import subprocess
+
+from flask import Flask, render_template
 
 app = Flask(__name__)
 
@@ -11,6 +12,7 @@ app = Flask(__name__)
 # TODO: add login system
 # TODO: add statistic
 # TODO: add 2005 y. tas
+# TODO: universal functions for page opening
 
 @app.route("/")
 @app.route("/index")
@@ -36,6 +38,7 @@ def start_task_ru(name):
     fnull = open(os.devnull, "w")
     args = "static\\flash.exe static\\KIO_competition\\KIO_ru_20" + name
     subprocess.call(args, stdout=fnull, stderr=fnull, shell=False)
+    return ""
 
 
 @app.route("/start_task_en/<name>")
@@ -45,6 +48,7 @@ def start_task_en(name):
     args = "static\\flash.exe static\\EN_tasks\\" \
            "KIO_competition_en\\KIO_en_20" + name
     subprocess.call(args, stdout=fnull, stderr=fnull, shell=False)
+    return ""
 
 
 @app.route("/start_kio_school_task/<name>")
@@ -53,12 +57,7 @@ def start_kio_school_task(name):
     fnull = open(os.devnull, "w")
     args = "static\\flash.exe static\\KIO_SCHOOL\\" + name
     subprocess.call(args, stdout=fnull, stderr=fnull, shell=False)
-
-
-@app.route("/go_back")
-def go_back():
-    """Return to previous page."""
-    return "<script>history.go(-1)</script>"
+    return ""
 
 
 @app.route("/current_competition")
@@ -99,7 +98,7 @@ def standalone_ru_tasks():
 
 @app.route("/start_2006_8_task/<year>/<name>")
 def start_2006_8_task(name, year):
-    """Start task Zanimatelnie zadachi"""
+    """Start task Zanimatelnie zadachi."""
     fnull = open(os.devnull, "w")
     if year == "zadachi":
         args = "static\\Standalone_RU_tasks\\zanimatelnie_zadachi\\math.exe"
@@ -107,6 +106,7 @@ def start_2006_8_task(name, year):
         args = "static\\Standalone_RU_tasks\\KIO20" + year \
                + name + "\\KIO20" + year + name + ".exe"
     subprocess.call(args, stdout=fnull, stderr=fnull, shell=False)
+    return ""
 
 
 if __name__ == "__main__":

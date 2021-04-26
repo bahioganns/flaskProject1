@@ -12,6 +12,7 @@ app = Flask(__name__)
 # TODO: add statistic
 # TODO: add 2005 y. tas
 # TODO: universal functions for page opening
+# TODO: open tasks on the top
 
 @app.route("/")
 @app.route("/index")

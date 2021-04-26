@@ -1,9 +1,8 @@
 """Entrypoint for flask application with kio tasks."""
 
-from flask import Flask, render_template
-import os
-import subprocess
+import subprocess  # noqa: S404
 
+from flask import Flask, render_template
 
 app = Flask(__name__)
 
@@ -12,6 +11,7 @@ app = Flask(__name__)
 # TODO: add login system
 # TODO: add statistic
 # TODO: add 2005 y. tas
+
 
 @app.route("/")
 @app.route("/index")
@@ -25,84 +25,49 @@ def index():
     )
 
 
-@app.route("/start_task_ru/<name>")
-def start_task_ru(name):
-    """Start task from KIO_competition."""
-    fnull = open(os.devnull, "w")
-    args = "static\\flash.exe static\\KIO_competition\\KIO_ru_20" + name
-    subprocess.call(args, stdout=fnull, stderr=fnull, shell=False)
+@app.route("/<category>")
+def open_any_task(category):
+    """Open any html page from template directory."""
+    if category == "favicon.ico":
+        return ""
+    return render_template(f"{category}.html")
 
 
-@app.route("/start_task_en/<name>")
-def start_task_en(name):
-    """Start task from KIO_competition_en."""
-    fnull = open(os.devnull, "w")
-    args = "static\\flash.exe static\\EN_tasks\\" \
-           "KIO_competition_en\\KIO_en_20" + name
-    subprocess.call(args, stdout=fnull, stderr=fnull, shell=False)
+@app.route("/<category>/<name>/", defaults={"year": None})
+@app.route("/<category>/<year>/<name>")
+def start_task(category, name, year):
+    """Start any task."""
+    subprocess.call(  # noqa: S603
+        get_path(category, name, year),
+        stdout=subprocess.DEVNULL,
+    )
+    return ""
 
 
-@app.route("/start_kio_school_task/<name>")
-def start_kio_school_task(name):
-    """Start task from KIO_SCHOOL"""
-    fnull = open(os.devnull, "w")
-    args = "static\\flash.exe static\\KIO_SCHOOL\\" + name
-    subprocess.call(args, stdout=fnull, stderr=fnull, shell=False)
+def get_path(category, name, year):
+    """Return path to the task."""
+    task_path = None
 
+    if category == "start_2006_8_task":
+        if year == "zadachi":
+            task_path = "Standalone_RU_tasks/zanimatelnie_zadachi/math.exe"
+        else:
+            kio_name = f"KIO20{year}{name}"
+            task_path = f"Standalone_RU_tasks/{kio_name}/{kio_name}.exe"
 
-@app.route("/go_back")
-def go_back():
-    """Return to previous page."""
-    return "<script>history.go(-1)</script>"
+    elif category == "start_kio_school_task":
+        task_path = f"flash.exe static/KIO_SCHOOL/{name}"
 
+    elif category == "start_task_en":
+        task_path = (
+            f"flash.exe static/EN_tasks/KIO_competition_en/KIO_en_20{name}"
+        )
 
-@app.route("/current_competition")
-def open_page():
-    """Open current competition page."""
-    return render_template("current_competition.html")
+    elif category == "start_task_ru":
+        task_path = f"flash.exe static/KIO_competition/KIO_ru_20{name}"
 
-
-@app.route("/english_tasks")
-def open_en_tasks():
-    """Open english tasks page."""
-    return render_template("english_tasks.html")
-
-
-@app.route("/english_page")
-def open_en_page():
-    """Open page for all english tasks."""
-    return render_template("english_page.html")
-
-
-@app.route("/old_files")
-def old_files():
-    """Open old files. This function has no use in current moment."""
-    return render_template("old_files.html")
-
-
-@app.route("/kio_school_files")
-def kio_school_files():
-    """Open KIO School page."""
-    return render_template("kio_school_files.html")
-
-
-@app.route("/standalone_ru_tasks")
-def standalone_ru_tasks():
-    """Open standalone ru tasks page."""
-    return render_template("standalone_RU_tasks.html")
-
-
-@app.route("/start_2006_8_task/<year>/<name>")
-def start_2006_8_task(name, year):
-    """Start task Zanimatelnie zadachi"""
-    fnull = open(os.devnull, "w")
-    if year == "zadachi":
-        args = "static\\Standalone_RU_tasks\\zanimatelnie_zadachi\\math.exe"
-    else:
-        args = "static\\Standalone_RU_tasks\\KIO20" + year \
-               + name + "\\KIO20" + year + name + ".exe"
-    subprocess.call(args, stdout=fnull, stderr=fnull, shell=False)
+    return f"static/{task_path}"
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=True)  # noqa: S201

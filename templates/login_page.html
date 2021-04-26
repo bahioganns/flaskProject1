@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block content %}
+
+    <h1><div id="content_wrapper">
+              <br>
+              <div id="content">
+
+  <form action="handler.php">
+   <p><strong>Как вас зовут?</strong></p>
+   <p><input maxlength="25" size="40" value="Вася"></p>
+  </form>
+
+          </div>
+          <br>
+        </div></h1>
+{% for post in posts %}
+<div><p>{{post.author.nickname}} says: <b>{{post.body}}</b></p></div>
+
+{% endfor %}
+{% endblock %}

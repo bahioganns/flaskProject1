@@ -1,27 +1,24 @@
 {% extends "base.html" %}
 {% block content %}
-
-{#<h1>KIO School</h1>#}
-
+{#
+<h1>KIO School</h1>
+#}
 <body>
     <div id="content_wrapper">
         <br>
-            <div id="content">
-                <div>Tasks List: </div>
-                <p>
+        <div id="content">
+            <div>Tasks List: </div>
+            <p>
                 <input type="button" class="task_button" value="KIO test task" onclick="fetch('/start_kio_school_task/task1.swf')"/>
-                </p>
-                <p>
+            </p>
+            <p>
                 <input type="button" class="task_button" value="KIO test task" onclick="fetch('/start_kio_school_task/task2.swf')"/>
-                </p>
-                 <p>
+            </p>
+            <p>
                 <input type="button" class="task_button" value="KIO test task" onclick="fetch('/start_kio_school_task/task3.swf')"/>
-                </p>
-
-          </div>
+            </p>
+        </div>
         <br>
     </div>
-
-
 </body>
 {% endblock %}

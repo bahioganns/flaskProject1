@@ -1,27 +1,27 @@
 {% extends "base.html" %}
 {% block content %}
-{#<h1>Tasks from KIO competition on English</h1>#}
+{#
+<h1>Tasks from KIO competition on English</h1>
+#}
 <body>
-<div id="content_wrapper">
+    <div id="content_wrapper">
         <br>
-            <div id="content">
+        <div id="content">
             <div>Tasks List: </div>
-    <p>
-    <input type="button" class="task_button" value="KIO 2011 1" onclick="fetch('/start_task_en/11_1.swf')"/>
-    <input type="button" class="task_button" value="KIO 2011 2" onclick="fetch('/start_task_en/11_2.swf')"/>
-    </p>
-    <p>
-    <input type="button" class="task_button" value="KIO 2012 0" onclick="fetch('/start_task_en/12_0.swf')"/>
-    <input type="button" class="task_button" value="KIO 2012 1" onclick="fetch('/start_task_en/12_1.swf')"/>
-    <input type="button" class="task_button" value="KIO 2012 2" onclick="fetch('/start_task_en/12_2.swf')"/>
-    </p>
-    <p>
-    <input type="button" class="task_button" onclick="history.back();" value="Back"/>
-    </p>
-          </div>
+            <p>
+                <input type="button" class="task_button" value="KIO 2011 1" onclick="fetch('/start_task_en/11_1.swf')"/>
+                <input type="button" class="task_button" value="KIO 2011 2" onclick="fetch('/start_task_en/11_2.swf')"/>
+            </p>
+            <p>
+                <input type="button" class="task_button" value="KIO 2012 0" onclick="fetch('/start_task_en/12_0.swf')"/>
+                <input type="button" class="task_button" value="KIO 2012 1" onclick="fetch('/start_task_en/12_1.swf')"/>
+                <input type="button" class="task_button" value="KIO 2012 2" onclick="fetch('/start_task_en/12_2.swf')"/>
+            </p>
+            <p>
+                <input type="button" class="task_button" onclick="history.back();" value="Back"/>
+            </p>
+        </div>
         <br>
     </div>
-
-
 </body>
 {% endblock %}
